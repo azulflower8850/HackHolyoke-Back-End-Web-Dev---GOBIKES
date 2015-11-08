@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <style>
+     body {background-color:lightgreen}
+     h1   {color:darkgreen}
+     p    {color:darkgreen}
+</style>
+</head>
+
+<body>
+
+<h1> GO BIKES - OLIN COLLEGE OF ENGINEERING </h1>
+
+
+
+<h2> Bike 1 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo()">Click here to see who has the bike</button>
+<p id="taken"></p>
+<p id="chicken"></p>
+<p id="chicken2"></p>
+<p id="chicken3"></p>
+<p id="open"></p>
+
+<br>
+	
+<form action="Checkout.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo(){
+
+if(localStorage.getItem("Reported")=="1"){
+		document.getElementById("taken").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name"))!= "" && localStorage.getItem("name")!=null)	{
+	
+	
+
+
+			document.getElementById("taken").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken").innerHTML = "Person Name: " + localStorage.getItem("name");
+			document.getElementById("chicken2").innerHTML = "Email: " + localStorage.getItem("email");
+			document.getElementById("chicken3").innerHTML = "Time checked out: " + localStorage.getItem("time");
+		
+}
+else
+{
+	document.getElementById("open").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+<h2> Bike 2 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo2()">Click here to see who has the bike</button>
+<p id="taken2"></p>
+<p id="chicken20"></p>
+<p id="chicken22"></p>
+<p id="chicken23"></p>
+<p id="open2"></p>
+
+<br>
+	
+<form action="Checkout2.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin2.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing2.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report2.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo2(){
+
+if(localStorage.getItem("Reported2")=="1"){
+		document.getElementById("taken2").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name2"))!= "" && localStorage.getItem("name2")!=null)	{
+	
+	
+
+
+			document.getElementById("taken2").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken20").innerHTML = "Person Name: " + localStorage.getItem("name2");
+			document.getElementById("chicken22").innerHTML = "Email: " + localStorage.getItem("email2");
+			document.getElementById("chicken23").innerHTML = "Time checked out: " + localStorage.getItem("time2");
+		
+}
+else
+{
+	document.getElementById("open2").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<h2> Bike 3 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo3()">Click here to see who has the bike</button>
+<p id="taken3"></p>
+<p id="chicken30"></p>
+<p id="chicken32"></p>
+<p id="chicken33"></p>
+<p id="open3"></p>
+
+<br>
+	
+<form action="Checkout3.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin3.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing3.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report3.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo3(){
+
+if(localStorage.getItem("Reported3")=="1"){
+		document.getElementById("taken3").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name3"))!= "" && localStorage.getItem("name3")!=null)	{
+	
+	
+
+
+			document.getElementById("taken3").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken30").innerHTML = "Person Name: " + localStorage.getItem("name3");
+			document.getElementById("chicken32").innerHTML = "Email: " + localStorage.getItem("email3");
+			document.getElementById("chicken33").innerHTML = "Time checked out: " + localStorage.getItem("time3");
+		
+}
+else
+{
+	document.getElementById("open3").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<h2> Bike 4 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo4()">Click here to see who has the bike</button>
+<p id="taken4"></p>
+<p id="chicken40"></p>
+<p id="chicken42"></p>
+<p id="chicken43"></p>
+<p id="open4"></p>
+
+<br>
+	
+<form action="Checkout4.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin4.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing4.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report4.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo4(){
+
+if(localStorage.getItem("Reported4")=="1"){
+		document.getElementById("taken4").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name4"))!= ""&& localStorage.getItem("name4")!=null)	{
+	
+	
+
+
+			document.getElementById("taken4").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken40").innerHTML = "Person Name: " + localStorage.getItem("name4");
+			document.getElementById("chicken42").innerHTML = "Email: " + localStorage.getItem("email4");
+			document.getElementById("chicken43").innerHTML = "Time checked out: " + localStorage.getItem("time4");
+		
+}
+else
+{
+	document.getElementById("open4").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<h2> Bike 5 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo5()">Click here to see who has the bike</button>
+<p id="taken5"></p>
+<p id="chicken50"></p>
+<p id="chicken52"></p>
+<p id="chicken53"></p>
+<p id="open5"></p>
+
+<br>
+	
+<form action="Checkout5.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin5.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing5.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report5.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo5(){
+
+if(localStorage.getItem("Reported5")=="1"){
+		document.getElementById("taken5").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name5"))!= "" && localStorage.getItem("name5")!=null)	{
+	
+	
+
+
+			document.getElementById("taken5").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken50").innerHTML = "Person Name: " + localStorage.getItem("name5");
+			document.getElementById("chicken52").innerHTML = "Email: " + localStorage.getItem("email5");
+			document.getElementById("chicken53").innerHTML = "Time checked out: " + localStorage.getItem("time5");
+		
+}
+else
+{
+	document.getElementById("open5").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<h2> Bike 6</h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo6()">Click here to see who has the bike</button>
+<p id="taken6"></p>
+<p id="chicken60"></p>
+<p id="chicken62"></p>
+<p id="chicken63"></p>
+<p id="open6"></p>
+
+<br>
+	
+<form action="Checkout6.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin6.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing6.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report6.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo6(){
+
+if(localStorage.getItem("Reported6")=="1"){
+		document.getElementById("taken6").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name6"))!= "" && localStorage.getItem("name6")!=null)	{
+	
+	
+
+
+			document.getElementById("taken6").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken60").innerHTML = "Person Name: " + localStorage.getItem("name6");
+			document.getElementById("chicken62").innerHTML = "Email: " + localStorage.getItem("email6");
+			document.getElementById("chicken63").innerHTML = "Time checked out: " + localStorage.getItem("time6");
+		
+}
+else
+{
+	document.getElementById("open6").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<h2> Bike 7 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo7()">Click here to see who has the bike</button>
+<p id="taken7"></p>
+<p id="chicken70"></p>
+<p id="chicken72"></p>
+<p id="chicken73"></p>
+<p id="open7"></p>
+
+<br>
+	
+<form action="Checkout7.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin7.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing7.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report7.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo7(){
+
+if(localStorage.getItem("Reported7")=="1"){
+		document.getElementById("taken7").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name7"))!= "" && localStorage.getItem("name7")!=null)	{
+	
+	
+
+
+			document.getElementById("taken7").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken70").innerHTML = "Person Name: " + localStorage.getItem("name7");
+			document.getElementById("chicken72").innerHTML = "Email: " + localStorage.getItem("email7");
+			document.getElementById("chicken73").innerHTML = "Time checked out: " + localStorage.getItem("time7");
+		
+}
+else
+{
+	document.getElementById("open7").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<h2> Bike 8 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo8()">Click here to see who has the bike</button>
+<p id="taken8"></p>
+<p id="chicken80"></p>
+<p id="chicken82"></p>
+<p id="chicken83"></p>
+<p id="open8"></p>
+
+<br>
+	
+<form action="Checkout8.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin8.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing8.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report8.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo8(){
+
+if(localStorage.getItem("Reported8")=="1"){
+		document.getElementById("taken8").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name8"))!= "" && localStorage.getItem("name8")!=null)	{
+	
+	
+
+
+			document.getElementById("taken8").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken80").innerHTML = "Person Name: " + localStorage.getItem("name8");
+			document.getElementById("chicken82").innerHTML = "Email: " + localStorage.getItem("email8");
+			document.getElementById("chicken83").innerHTML = "Time checked out: " + localStorage.getItem("time8");
+		
+}
+else
+{
+	document.getElementById("open8").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+<h2> Bike 9 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo9()">Click here to see who has the bike</button>
+<p id="taken9"></p>
+<p id="chicken90"></p>
+<p id="chicken92"></p>
+<p id="chicken93"></p>
+<p id="open9"></p>
+
+<br>
+	
+<form action="Checkout9.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin9.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing9.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report9.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo9(){
+
+if(localStorage.getItem("Reported9")=="1"){
+		document.getElementById("taken9").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name9"))!= ""&& localStorage.getItem("name9")!=null)	{
+	
+	
+
+
+			document.getElementById("taken9").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken90").innerHTML = "Person Name: " + localStorage.getItem("name9");
+			document.getElementById("chicken92").innerHTML = "Email: " + localStorage.getItem("email9");
+			document.getElementById("chicken93").innerHTML = "Time checked out: " + localStorage.getItem("time9");
+		
+}
+else
+{
+	document.getElementById("open9").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+<h2> Bike 10 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo10()">Click here to see who has the bike</button>
+<p id="taken10"></p>
+<p id="chicken100"></p>
+<p id="chicken102"></p>
+<p id="chicken103"></p>
+<p id="open10"></p>
+
+<br>
+	
+<form action="Checkout10.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin10.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing10.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report10.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo10(){
+
+if(localStorage.getItem("Reported10")=="1"){
+		document.getElementById("taken10").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name10"))!= ""&& localStorage.getItem("name10")!=null)	{
+	
+	
+
+
+			document.getElementById("taken10").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken100").innerHTML = "Person Name: " + localStorage.getItem("name10");
+			document.getElementById("chicken102").innerHTML = "Email: " + localStorage.getItem("email10");
+			document.getElementById("chicken103").innerHTML = "Time checked out: " + localStorage.getItem("time10");
+		
+}
+else
+{
+	document.getElementById("open10").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+<h2> Bike 11 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo11()">Click here to see who has the bike</button>
+<p id="taken11"></p>
+<p id="chicken110"></p>
+<p id="chicken112"></p>
+<p id="chicken113"></p>
+<p id="open11"></p>
+
+<br>
+	
+<form action="Checkout11.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin11.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing11.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report11.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo11(){
+
+if(localStorage.getItem("Reported11")=="1"){
+		document.getElementById("taken11").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name11"))!= ""&& localStorage.getItem("name11")!=null)	{
+	
+	
+
+
+			document.getElementById("taken11").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken110").innerHTML = "Person Name: " + localStorage.getItem("name11");
+			document.getElementById("chicken112").innerHTML = "Email: " + localStorage.getItem("email11");
+			document.getElementById("chicken113").innerHTML = "Time checked out: " + localStorage.getItem("time11");
+		
+}
+else
+{
+	document.getElementById("open11").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<h2> Bike 12 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo12()">Click here to see who has the bike</button>
+<p id="taken12"></p>
+<p id="chicken120"></p>
+<p id="chicken122"></p>
+<p id="chicken123"></p>
+<p id="open12"></p>
+
+<br>
+	
+<form action="Checkout12.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin12.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing12.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report12.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo12(){
+
+if(localStorage.getItem("Reported12")=="1"){
+		document.getElementById("taken12").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name12"))!= ""&& localStorage.getItem("name12")!=null)	{
+	
+	
+
+
+			document.getElementById("taken12").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken120").innerHTML = "Person Name: " + localStorage.getItem("name12");
+			document.getElementById("chicken122").innerHTML = "Email: " + localStorage.getItem("email12");
+			document.getElementById("chicken123").innerHTML = "Time checked out: " + localStorage.getItem("time12");
+		
+}
+else
+{
+	document.getElementById("open12").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<h2> Bike 13 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo13()">Click here to see who has the bike</button>
+<p id="taken13"></p>
+<p id="chicken130"></p>
+<p id="chicken132"></p>
+<p id="chicken133"></p>
+<p id="open13"></p>
+
+<br>
+	
+<form action="Checkout13.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin13.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing13.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report13.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo13(){
+
+if(localStorage.getItem("Reported13")=="1"){
+		document.getElementById("taken13").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name13"))!= ""&& localStorage.getItem("name13")!=null)	{
+	
+	
+
+
+			document.getElementById("taken13").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken130").innerHTML = "Person Name: " + localStorage.getItem("name13");
+			document.getElementById("chicken132").innerHTML = "Email: " + localStorage.getItem("email13");
+			document.getElementById("chicken133").innerHTML = "Time checked out: " + localStorage.getItem("time13");
+		
+}
+else
+{
+	document.getElementById("open13").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+<h2> Bike 14 </h2>
+
+<br>
+
+<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="Showinfo14()">Click here to see who has the bike</button>
+<p id="taken14"></p>
+<p id="chicken140"></p>
+<p id="chicken142"></p>
+<p id="chicken143"></p>
+<p id="open14"></p>
+
+<br>
+	
+<form action="Checkout14.html">
+	<input type="submit" value="Checkout">
+</form>	
+
+<br>
+<br>
+
+<form action="Checkin14.html">
+	<input type="submit" value="Checkin">
+</form>		
+
+<br>
+<br>
+
+<form action="ReservePing14.html">
+	<input type="submit" value="Reserve/Ping">
+</form>		
+
+<br>
+<br>
+
+<form action="Report14.html">
+	<input type="submit" value="Report a Problem">
+</form>	
+
+
+<script>
+function Showinfo14(){
+
+if(localStorage.getItem("Reported14")=="1"){
+		document.getElementById("taken14").innerHTML =" Sorry this bike is currently under repair. Try a different bike!";
+		}
+else
+{		
+if((localStorage.getItem("name14"))!= ""&& localStorage.getItem("name14")!=null)	{
+	
+	
+
+
+			document.getElementById("taken14").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("chicken140").innerHTML = "Person Name: " + localStorage.getItem("name14");
+			document.getElementById("chicken142").innerHTML = "Email: " + localStorage.getItem("email14");
+			document.getElementById("chicken143").innerHTML = "Time checked out: " + localStorage.getItem("time14");
+		
+}
+else
+{
+	document.getElementById("open14").innerHTML = "It's Available!";
+
+}
+
+}
+}
+</script>
+
+
+</body>
+</html>

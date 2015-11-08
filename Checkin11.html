@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <style>
+     body {background-color:lightgreen}
+     h1   {color:darkgreen}
+     p    {color:darkgreen}
+</style>
+</head>
+<body>
+
+<h1> Checking In </h1>
+
+<p> Remember your password? Now use it to check in! </p>
+<input id="pass" type="String">
+
+
+<button type="button" class="btn btn-success" onclick="Checkin()">Submit</button>
+
+
+<p id="check" ></p>
+
+<br>
+
+
+<form action="MainPage.html">
+    <input type="submit" value="Back to Main">
+</form>
+
+
+<script> 
+function Checkin(){
+	var pass, passcheck, text, next;
+
+
+	pass = document.getElementById("pass").value;
+	passcheck = localStorage.getItem("password11");
+	if(pass == passcheck)
+
+		{ 
+			localStorage.setItem("name11", "");
+			localStorage.setItem("email11", "");
+			localStorage.setItem("time11","");
+			localStorage.setItem("password11","");
+			text = "Thanks for checking in! Hope you enjoyed your ride! "
+
+			next=localStorage.getItem("Queue11");
+			if(next != ""){
+				text += "<br />There is someone in line behind you for the bike. Can you please notify or email "+next+ " as soon as possible so he can use the bike? Thank you so much! Have a great day!<br />"
+				localStorage.setItem("Queue11","");
+
+
+
+
+
+		}	
+			}
+	else 
+	{
+		text = "Sorry, that was not the correct password. Please either retype your password or wait until the real user comes back!"
+	}
+
+document.getElementById("check").innerHTML = text;
+
+
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>

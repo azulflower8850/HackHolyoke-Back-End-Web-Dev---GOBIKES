@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <style>
+     body {background-color:lightgreen}
+     h1   {color:darkgreen}
+     p    {color:darkgreen}
+</style>
+</head>
+<body>
+
+
+
+<h1> Report a problem or broken part to Sam </h1>
+
+<p> Please describe the problem with the bike so Sam knows a bit more about the issue. Remember to specify the bike number and be as specific as possible. </p>
+<textarea id="msg"rows="20" cols="50" >
+    
+</textarea>
+<button type="button" class="btn btn-success"onclick="sendMail(); return false">Send</button>
+
+
+
+<script>
+function sendMail() {
+    var link = "mailto:kevin.zhang@students.olin.edu"
+             + "?subject=" + escape("GO Bikes- Broken Part Report")
+             + "&body=" + escape(document.getElementById('msg').value);
+
+    window.location.href = link;
+
+
+    localStorage.setItem("Reported4", "1");
+}
+
+
+</script>
+
+<br>
+<br>
+
+<form action="MainPage.html">
+    <input type="submit" value="Back to Main">
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<p> For Administrative purposes regarding repairs. Please don't touch! </p>
+<button type="button" class="btn btn-warning" onclick="ResetReport()"> Reset Status </button>
+<p id="reset"></p>
+
+<script>
+function ResetReport(){
+	localStorage.setItem("Reported4", "0");
+	document.getElementById("reset").innerHTML = "Repairs finished. Things back in order."
+}
+</script>
+
+
+
+</body>
+</html>

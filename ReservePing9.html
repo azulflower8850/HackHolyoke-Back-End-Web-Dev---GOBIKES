@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <style>
+     body {background-color:lightgreen}
+     h1   {color:darkgreen}
+     p    {color:darkgreen}
+</style>
+</head>
+<body>
+
+<h1> If the bike is unavailable, you can reserve a spot for next turn to have the bike!</h1>
+
+<p> Please put down your email so we can contact you when it's your turn! </p>
+<input id="Remail" type="String">
+
+
+<button type="button" class="btn btn-success" onclick="Reserve()"> Reserve a Spot</button>
+
+<br>
+<br>
+<br>
+<br>
+<p id="Q"></p>
+
+<script>
+function Reserve(){
+		var Queue;
+		if(localStorage.getItem("Queue9")==""||localStorage.getItem("Queue9")==null){
+
+
+		Queue=document.getElementById("Remail").value;
+		
+		var text = "Thanks! You are now signed up to be next in line for the bike. Be sure to keep an eye out for an email when the bike is back!";
+		
+		localStorage.setItem("Queue9",Queue);
+		}
+		else
+		{
+			text = "Sorry, there is currently already someone who is in line for the bike, and we don't want to keep you waiting for too long. Please try a different bike or try again later."
+		}
+document.getElementById("Q").innerHTML = text;
+}
+</script>
+
+
+
+<h2> Ping People you Think are taking Too Long with the Bike</h2>
+
+
+<button type="button" class="btn btn-success" onclick="sendPing(); return false"> Send Ping </button>
+
+
+<script>
+function sendPing() {
+    var link = "mailto:"+localStorage.getItem("email9")
+             + "?subject=" + escape("GO Bikes- You're being Pinged!")
+             + "&body=" + escape("This is a message from GoBikes. A user wants to use the bikes, so it'd be nice if you hurried up and returned the bike as soon as possible for others to use! Thanks and happy riding!");
+
+    window.location.href = link;
+}
+
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<form action="MainPage.html">
+    <input type="submit" value="Back to Main">
+</form>
+
+
+
+
+</body>
+</html>
+

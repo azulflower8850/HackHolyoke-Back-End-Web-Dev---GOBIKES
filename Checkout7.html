@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <style>
+     body {background-color:lightgreen}
+     h1   {color:darkgreen}
+     p    {color:darkgreen}
+</style>
+</head>
+<body>
+
+<h1>Checkout</h1>
+
+<p> Please enter your name </p>
+<input id="name7" type="String">
+
+<br>
+
+<p>Please enter your email address </p>
+<input id="email7" type="String">
+
+<br>
+
+<p>Please enter the date AND time you took the bike </p>
+<input id="time7" type="String">
+
+<br>
+
+<p>Please enter a password. Remember this for when you check back in!</p>
+<input id="password7" type="String">
+
+<button type="button" class="btn btn-success" onclick="Checkout()">Submit</button>
+
+<br>
+<br>
+
+<form action="MainPage.html">
+    <input type="submit" value="Back to Main">
+</form>
+
+<p id="demo"></p>
+
+
+<script>
+function Checkout() {
+	var name, email, time, pass, text;
+	if(localStorage.getItem("name7") == ""||localStorage.getItem("name7")==null){
+
+	name = document.getElementById("name7").value;
+	email = document.getElementById("email7").value;
+	time = document.getElementById("time7").value;
+	pass = document.getElementById("password7").value;
+
+	localStorage.setItem("name7", name);
+	localStorage.setItem("email7", email);
+	localStorage.setItem("time7", time);
+	localStorage.setItem("password7", pass);
+
+	text = "You have checked out this bike. Remember to return it when you're done!"
+    }
+    else{
+    	text = "I am sorry, someone has already checked out this bike. Please wait for it return before attempting to check it out again."
+    } 
+	document.getElementById("demo").innerHTML = text;
+	
+    
+}
+</script>
+
+
+</body>
+</html>
