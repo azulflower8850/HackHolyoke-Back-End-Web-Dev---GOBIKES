@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="MainPage.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
    <style>
      body {background-color:lightgreen}
-     h1   {color:darkgreen}
+     h2  {color:darkgreen}
      p    {color:darkgreen}
 </style>
 </head>
 
 <body>
-
+<div id="title">
 <h1> GO BIKES - OLIN COLLEGE OF ENGINEERING </h1>
+</div>
 
 
 
-<h2> Bike 1 </h2>
+<div id="line1" style="width:100%">
+
+<div id="bike1">
+<h2> Bike 15 </h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="BIke15.JPG" style="width:304px;height:228px;">
 
 
+<br>
 <br>
 
 <button type="button" class="btn btn-success" onclick="Showinfo()">Click here to see who has the bike</button>
@@ -36,30 +42,30 @@
 
 <br>
 	
-<form action="Checkout.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report.html'">
+	Report
+</button>
 
 
 <script>
@@ -75,7 +81,7 @@ if((localStorage.getItem("name"))!= "" && localStorage.getItem("name")!=null)	{
 	
 
 
-			document.getElementById("taken").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken").innerHTML = "Person Name: " + localStorage.getItem("name");
 			document.getElementById("chicken2").innerHTML = "Email: " + localStorage.getItem("email");
 			document.getElementById("chicken3").innerHTML = "Time checked out: " + localStorage.getItem("time");
@@ -92,7 +98,7 @@ else
 </script>
 
 
-
+</div>	
 
 
 
@@ -111,15 +117,14 @@ else
 
 
 
-
-
+<div id="bike2">
 <h2> Bike 2 </h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="BIke2.JPG" style="width:304px;height:228px;">
 
-
+<br>
 <br>
 
 <button type="button" class="btn btn-success" onclick="Showinfo2()">Click here to see who has the bike</button>
@@ -131,31 +136,30 @@ else
 
 <br>
 	
-<form action="Checkout2.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout2.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin2.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin2.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing2.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing2.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report2.html">
-	<input type="submit" value="Report a Problem">
-</form>	
-
+<button type="button" class="btn btn-success" onclick="location.href='Report2.html'">
+	Report
+</button>
 
 <script>
 function Showinfo2(){
@@ -170,7 +174,7 @@ if((localStorage.getItem("name2"))!= "" && localStorage.getItem("name2")!=null)	
 	
 
 
-			document.getElementById("taken2").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken2").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken20").innerHTML = "Person Name: " + localStorage.getItem("name2");
 			document.getElementById("chicken22").innerHTML = "Email: " + localStorage.getItem("email2");
 			document.getElementById("chicken23").innerHTML = "Time checked out: " + localStorage.getItem("time2");
@@ -186,7 +190,7 @@ else
 }
 </script>
 
-
+</div>
 
 
 <br>
@@ -199,14 +203,14 @@ else
 
 
 
-
-<h2> Bike 3 </h2>
+<div id="bike3">
+<h2> Bike 5 </h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="BIke5.JPG" style="width:304px;height:228px;">
 
-
+<br>
 <br>
 
 <button type="button" class="btn btn-success" onclick="Showinfo3()">Click here to see who has the bike</button>
@@ -218,30 +222,30 @@ else
 
 <br>
 	
-<form action="Checkout3.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout3.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin3.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin3.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing3.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing3.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report3.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report3.html'">
+	Report
+</button>
 
 
 <script>
@@ -257,7 +261,7 @@ if((localStorage.getItem("name3"))!= "" && localStorage.getItem("name3")!=null)	
 	
 
 
-			document.getElementById("taken3").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken3").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken30").innerHTML = "Person Name: " + localStorage.getItem("name3");
 			document.getElementById("chicken32").innerHTML = "Email: " + localStorage.getItem("email3");
 			document.getElementById("chicken33").innerHTML = "Time checked out: " + localStorage.getItem("time3");
@@ -273,6 +277,7 @@ else
 }
 </script>
 
+</div>
 
 <br>
 <br>
@@ -283,18 +288,18 @@ else
 
 
 
+<div id="bike4">
 
 
 
 
-
-<h2> Bike 4 </h2>
+<h2> Bike 18 </h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="BIke18.JPG" style="width:304px;height:228px;">
 
-
+<br>
 <br>
 
 <button type="button" class="btn btn-success" onclick="Showinfo4()">Click here to see who has the bike</button>
@@ -306,30 +311,30 @@ else
 
 <br>
 	
-<form action="Checkout4.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout4.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin4.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin4.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing4.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing4.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report4.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report4.html'">
+	Report
+</button>
 
 
 <script>
@@ -345,7 +350,7 @@ if((localStorage.getItem("name4"))!= ""&& localStorage.getItem("name4")!=null)	{
 	
 
 
-			document.getElementById("taken4").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken4").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken40").innerHTML = "Person Name: " + localStorage.getItem("name4");
 			document.getElementById("chicken42").innerHTML = "Email: " + localStorage.getItem("email4");
 			document.getElementById("chicken43").innerHTML = "Time checked out: " + localStorage.getItem("time4");
@@ -362,9 +367,11 @@ else
 </script>
 
 
+</div>
 
 
 
+</div>
 
 
 
@@ -375,16 +382,18 @@ else
 <br>
 
 
+<div id="bike5">
 
 
-
-<h2> Bike 5 </h2>
+<h2> Bike 4 </h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+
+<img src="BIke4.JPG" style="width:304px;height:228px;">
 
 
+<br>
 <br>
 
 <button type="button" class="btn btn-success" onclick="Showinfo5()">Click here to see who has the bike</button>
@@ -396,31 +405,30 @@ else
 
 <br>
 	
-<form action="Checkout5.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout5.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin5.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin5.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing5.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing5.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report5.html">
-	<input type="submit" value="Report a Problem">
-</form>	
-
+<button type="button" class="btn btn-success" onclick="location.href='Report5.html'">
+	Report
+</button>
 
 <script>
 function Showinfo5(){
@@ -435,7 +443,7 @@ if((localStorage.getItem("name5"))!= "" && localStorage.getItem("name5")!=null)	
 	
 
 
-			document.getElementById("taken5").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken5").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken50").innerHTML = "Person Name: " + localStorage.getItem("name5");
 			document.getElementById("chicken52").innerHTML = "Email: " + localStorage.getItem("email5");
 			document.getElementById("chicken53").innerHTML = "Time checked out: " + localStorage.getItem("time5");
@@ -451,7 +459,7 @@ else
 }
 </script>
 
-
+</div>
 <br>
 <br>
 <br>
@@ -466,15 +474,15 @@ else
 
 
 
-
+<div id="bike6">
 
 <h2> Bike 6</h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="BIke6.JPG" style="width:304px;height:228px;">
 
-
+<br>
 <br>
 
 <button type="button" class="btn btn-success" onclick="Showinfo6()">Click here to see who has the bike</button>
@@ -486,30 +494,30 @@ else
 
 <br>
 	
-<form action="Checkout6.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout6.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin6.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin6.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing6.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing6.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report6.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report6.html'">
+	Report
+</button>
 
 
 <script>
@@ -525,7 +533,7 @@ if((localStorage.getItem("name6"))!= "" && localStorage.getItem("name6")!=null)	
 	
 
 
-			document.getElementById("taken6").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken6").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken60").innerHTML = "Person Name: " + localStorage.getItem("name6");
 			document.getElementById("chicken62").innerHTML = "Email: " + localStorage.getItem("email6");
 			document.getElementById("chicken63").innerHTML = "Time checked out: " + localStorage.getItem("time6");
@@ -541,7 +549,7 @@ else
 }
 </script>
 
-
+</div>
 
 
 
@@ -556,16 +564,16 @@ else
 
 
 
+<div id="bike7">
 
 
-
-<h2> Bike 7 </h2>
+<h2> Bike 21 </h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="BIke21.JPG" style="width:304px;height:228px;">
 
-
+<br>
 <br>
 
 <button type="button" class="btn btn-success" onclick="Showinfo7()">Click here to see who has the bike</button>
@@ -577,30 +585,30 @@ else
 
 <br>
 	
-<form action="Checkout7.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout7.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin7.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin7.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing7.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing7.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report7.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report7.html'">
+	Report
+</button>
 
 
 <script>
@@ -616,7 +624,7 @@ if((localStorage.getItem("name7"))!= "" && localStorage.getItem("name7")!=null)	
 	
 
 
-			document.getElementById("taken7").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken7").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken70").innerHTML = "Person Name: " + localStorage.getItem("name7");
 			document.getElementById("chicken72").innerHTML = "Email: " + localStorage.getItem("email7");
 			document.getElementById("chicken73").innerHTML = "Time checked out: " + localStorage.getItem("time7");
@@ -634,7 +642,7 @@ else
 
 
 
-
+</div>
 
 
 
@@ -650,14 +658,14 @@ else
 
 
 
-
-<h2> Bike 8 </h2>
+<div id="bike8">
+<h2> Bike 10 </h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="BIke10.JPG" style="width:304px;height:228px;">
 
-
+<br>
 <br>
 
 <button type="button" class="btn btn-success" onclick="Showinfo8()">Click here to see who has the bike</button>
@@ -669,30 +677,30 @@ else
 
 <br>
 	
-<form action="Checkout8.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout8.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin8.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin8.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing8.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing8.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report8.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report8.html'">
+	Report
+</button>
 
 
 <script>
@@ -708,7 +716,7 @@ if((localStorage.getItem("name8"))!= "" && localStorage.getItem("name8")!=null)	
 	
 
 
-			document.getElementById("taken8").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken8").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken80").innerHTML = "Person Name: " + localStorage.getItem("name8");
 			document.getElementById("chicken82").innerHTML = "Email: " + localStorage.getItem("email8");
 			document.getElementById("chicken83").innerHTML = "Time checked out: " + localStorage.getItem("time8");
@@ -724,28 +732,29 @@ else
 }
 </script>
 
+</div>
 
-
+<br>
 <br>
 <br>
 <br>
 <br>
+
+
+
+
+
+
+
+<div id="bike9">
+
+
+<h2> Bike 20 </h2>
+
 <br>
 
-
-
-
-
-
-
-
-
-
-<h2> Bike 9 </h2>
-
+<img src="Bike20.jpg" style="width:304px;height:228px;">
 <br>
-
-<img src="Bicycle.svg" style="width:304px;height:228px;">
 
 
 <br>
@@ -759,30 +768,30 @@ else
 
 <br>
 	
-<form action="Checkout9.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout9.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin9.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin9.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing9.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing9.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report9.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report9.html'">
+	Report
+</button>
 
 
 <script>
@@ -798,7 +807,7 @@ if((localStorage.getItem("name9"))!= ""&& localStorage.getItem("name9")!=null)	{
 	
 
 
-			document.getElementById("taken9").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken9").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken90").innerHTML = "Person Name: " + localStorage.getItem("name9");
 			document.getElementById("chicken92").innerHTML = "Email: " + localStorage.getItem("email9");
 			document.getElementById("chicken93").innerHTML = "Time checked out: " + localStorage.getItem("time9");
@@ -814,29 +823,30 @@ else
 }
 </script>
 
+</div>
 
-
+<br>
 <br>
 <br>
 <br>
 <br>
+
+
+
+
+
+
+
+<div id="bike10">
+
+
+<h2> Bike 13 </h2>
+
 <br>
 
-
-
-
-
-
-
-
-
-
-<h2> Bike 10 </h2>
+<img src="Bike13.jpg" style="width:304px;height:228px;">
 
 <br>
-
-<img src="Bicycle.svg" style="width:304px;height:228px;">
-
 
 <br>
 
@@ -849,30 +859,30 @@ else
 
 <br>
 	
-<form action="Checkout10.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout10.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin10.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin10.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing10.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing10.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report10.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report10.html'">
+	Report
+</button>
 
 
 <script>
@@ -888,7 +898,7 @@ if((localStorage.getItem("name10"))!= ""&& localStorage.getItem("name10")!=null)
 	
 
 
-			document.getElementById("taken10").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken10").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken100").innerHTML = "Person Name: " + localStorage.getItem("name10");
 			document.getElementById("chicken102").innerHTML = "Email: " + localStorage.getItem("email10");
 			document.getElementById("chicken103").innerHTML = "Time checked out: " + localStorage.getItem("time10");
@@ -903,7 +913,7 @@ else
 }
 }
 </script>
-
+</div>
 
 
 <br>
@@ -917,7 +927,7 @@ else
 
 
 
-
+<div id="bike11">
 
 
 
@@ -925,8 +935,9 @@ else
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="Bike11.jpg" style="width:304px;height:228px;">
 
+<br>
 
 <br>
 
@@ -939,30 +950,30 @@ else
 
 <br>
 	
-<form action="Checkout11.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout11.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin11.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin11.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing11.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing11.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report11.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report11.html'">
+	Report
+</button>
 
 
 <script>
@@ -978,7 +989,7 @@ if((localStorage.getItem("name11"))!= ""&& localStorage.getItem("name11")!=null)
 	
 
 
-			document.getElementById("taken11").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken11").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken110").innerHTML = "Person Name: " + localStorage.getItem("name11");
 			document.getElementById("chicken112").innerHTML = "Email: " + localStorage.getItem("email11");
 			document.getElementById("chicken113").innerHTML = "Time checked out: " + localStorage.getItem("time11");
@@ -995,7 +1006,7 @@ else
 </script>
 
 
-
+</div>
 
 
 
@@ -1010,15 +1021,16 @@ else
 
 
 
-
+<div id="bike12">
 
 
 <h2> Bike 12 </h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="Bike12.jpg" style="width:304px;height:228px;">
 
+<br>
 
 <br>
 
@@ -1030,31 +1042,31 @@ else
 <p id="open12"></p>
 
 <br>
-	
-<form action="Checkout12.html">
-	<input type="submit" value="Checkout">
-</form>	
+
+<button type="button" class="btn btn-success" onclick="location.href='Checkout12.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin12.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin12.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing12.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing12.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report12.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report12.html'">
+	Report
+</button>
 
 
 <script>
@@ -1070,7 +1082,7 @@ if((localStorage.getItem("name12"))!= ""&& localStorage.getItem("name12")!=null)
 	
 
 
-			document.getElementById("taken12").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken12").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken120").innerHTML = "Person Name: " + localStorage.getItem("name12");
 			document.getElementById("chicken122").innerHTML = "Email: " + localStorage.getItem("email12");
 			document.getElementById("chicken123").innerHTML = "Time checked out: " + localStorage.getItem("time12");
@@ -1087,7 +1099,7 @@ else
 </script>
 
 
-
+</div>
 
 
 
@@ -1102,15 +1114,16 @@ else
 <br>
 
 
+<div id="bike13">
 
 
-
-<h2> Bike 13 </h2>
+<h2> Bike 17 </h2>
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="Bike17.jpg" style="width:304px;height:228px;">
 
+<br>
 
 <br>
 
@@ -1123,30 +1136,30 @@ else
 
 <br>
 	
-<form action="Checkout13.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout13.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin13.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin13.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing13.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing13.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report13.html">
-	<input type="submit" value="Report a Problem">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Report13.html'">
+	Report
+</button>
 
 
 <script>
@@ -1162,7 +1175,7 @@ if((localStorage.getItem("name13"))!= ""&& localStorage.getItem("name13")!=null)
 	
 
 
-			document.getElementById("taken13").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken13").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken130").innerHTML = "Person Name: " + localStorage.getItem("name13");
 			document.getElementById("chicken132").innerHTML = "Email: " + localStorage.getItem("email13");
 			document.getElementById("chicken133").innerHTML = "Time checked out: " + localStorage.getItem("time13");
@@ -1179,7 +1192,7 @@ else
 </script>
 
 
-
+</div>
 
 
 <br>
@@ -1191,7 +1204,7 @@ else
 
 
 
-
+<div id="bike14">
 
 
 
@@ -1201,10 +1214,12 @@ else
 
 <br>
 
-<img src="Bicycle.svg" style="width:304px;height:228px;">
+<img src="Bike14.jpg" style="width:304px;height:228px;">
 
 
 <br>
+<br>
+
 
 <button type="button" class="btn btn-success" onclick="Showinfo14()">Click here to see who has the bike</button>
 <p id="taken14"></p>
@@ -1215,31 +1230,30 @@ else
 
 <br>
 	
-<form action="Checkout14.html">
-	<input type="submit" value="Checkout">
-</form>	
+<button type="button" class="btn btn-success" onclick="location.href='Checkout14.html'">
+	Checkout
+</button>	
 
 <br>
 <br>
 
-<form action="Checkin14.html">
-	<input type="submit" value="Checkin">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='Checkin14.html'">
+	Checkin
+</button>	
 
 <br>
 <br>
 
-<form action="ReservePing14.html">
-	<input type="submit" value="Reserve/Ping">
-</form>		
+<button type="button" class="btn btn-success" onclick="location.href='ReservePing14.html'">
+	Reserve/Ping
+</button>	
 
 <br>
 <br>
 
-<form action="Report14.html">
-	<input type="submit" value="Report a Problem">
-</form>	
-
+<button type="button" class="btn btn-success" onclick="location.href='Report14.html'">
+	Report
+</button>
 
 <script>
 function Showinfo14(){
@@ -1254,7 +1268,7 @@ if((localStorage.getItem("name14"))!= ""&& localStorage.getItem("name14")!=null)
 	
 
 
-			document.getElementById("taken14").innerHTML = "This bike is currently in use. The person and contact information are:<br /><br />"
+			document.getElementById("taken14").innerHTML = "This bike is currently in use. <br /> The person and contact information are:<br /><br />"
 			document.getElementById("chicken140").innerHTML = "Person Name: " + localStorage.getItem("name14");
 			document.getElementById("chicken142").innerHTML = "Email: " + localStorage.getItem("email14");
 			document.getElementById("chicken143").innerHTML = "Time checked out: " + localStorage.getItem("time14");
@@ -1269,6 +1283,8 @@ else
 }
 }
 </script>
+
+</div>
 
 
 </body>

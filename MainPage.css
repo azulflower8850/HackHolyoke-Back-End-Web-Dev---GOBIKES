@@ -1,0 +1,115 @@
+
+
+#title {
+	background-color:green;
+    color:white;
+    text-align:center;
+    padding:5px;
+
+
+}
+
+#bike1{
+	margin-left:160px;
+
+
+}
+
+#bike2{
+	position: absolute;
+	top: 80px;
+	left:560px;
+
+
+	
+}
+
+#bike3{
+	position: absolute;
+	top: 80px;
+	left:960px;
+
+
+	
+}
+
+#bike4{
+	position: absolute;
+	top: 80px;
+	left:1360px;
+
+
+	
+}
+
+#bike5{
+	position: absolute;
+	top: 820px;
+	left:160px;
+	
+}
+
+#bike6{
+	position: absolute;
+	top: 820px;
+	left:560px;
+	
+}
+
+#bike7{
+	position: absolute;
+	top: 820px;
+	left:960px;
+	
+}
+
+#bike8{
+	position: absolute;
+	top: 820px;
+	left:1360px;
+	
+}
+
+#bike9{
+	position: absolute;
+	top: 1560px;
+	left:160px;
+	
+}
+
+#bike10{
+	position: absolute;
+	top: 1560px;
+	left:560px;
+	
+}
+
+#bike11{
+	position: absolute;
+	top: 1560px;
+	left:960px;
+	
+}
+
+#bike12{
+	position: absolute;
+	top: 1560px;
+	left:1360px;
+	
+}
+
+#bike13{
+	position: absolute;
+	top: 2300px;
+	left:160px;
+	
+}
+
+#bike14{
+	position: absolute;
+	top: 2300px;
+	left:560px;
+	
+}
+
+
