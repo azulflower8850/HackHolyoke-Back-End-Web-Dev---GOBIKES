@@ -1,0 +1,22 @@
+<HTML>
+      <HEAD>
+        <TITLE>Sum</TITLE>
+
+        <script type="text/javascript">
+          function sum()
+          {
+             var num1 = document.myform.number1.value;
+             document.getElementById('add').innerHTML = "Hi " + num1;
+          }
+        </script>
+      </HEAD>
+
+      <BODY>
+        <FORM NAME="myform">
+          <INPUT TYPE="text" NAME="number1" VALUE="">
+          <INPUT TYPE="button" NAME="button" Value="Enter" onClick="sum()">
+          <p id="add"></p>
+        </FORM>
+
+      </BODY>
+</HTML>
